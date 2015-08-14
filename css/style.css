@@ -1,0 +1,96 @@
+body, html {
+	margin: 0;
+	padding: 0;
+	background: #263238;
+	font-family: 'Lato', 'Source Han Sans CN', 'Helvetica Neue', helvetica, Arial, sans-serif; 
+}
+
+a, a:hover, a:link, a:visited {
+	text-decoration: none;
+}
+
+ul {
+	list-style: none;
+	margin: 0px;
+	padding: 0px;
+}
+
+i {
+	font-family: serif;
+}
+
+#menu {
+	position: fixed;
+	top: 10%;
+	height: 80%;
+	min-height: 400px;
+	left: 100px;
+	/*background: #C8D8DC;*/
+}
+
+#menu h1 a img {
+	width: 100%;
+	height: auto;
+	border-radius: 50%;
+	box-shadow: 0em 0em .1em #84D8D0;
+	transition: box-shadow .5s ease-in-out;
+}
+
+#menu h1 a img:hover {
+	box-shadow: 0em 0em .5em #84D8D0;
+}
+
+#menu ul li {
+	float: left;
+	clear: both;
+	background: #80CBC4;
+	padding: .2em;
+	margin: 0 10px 20px 0;
+}
+
+#menu ul li:hover {
+	background: #446969;
+}
+
+#menu ul li a {
+	color: #84FFFF;
+	text-decoration: none;
+	text-transform: uppercase;
+}
+
+#center {
+	width: 600px;
+	margin: 100px 0 0 350px;
+}
+
+.post {
+	color: #84FFFF;
+}
+
+.post p {
+	color: #84FFFF;
+	font-weight: 100;
+	font-size: 1.2em;
+}
+
+.post .links a {
+/*	float: left;
+	clear: both;*/
+	margin: 0 .2em 0 .2em;
+}
+
+.post a:hover {
+	text-decoration: underline;
+}
+
+.post a:visited, .post a:link {
+	color: inherit;
+}
+
+#copyright {
+	color: #84FFFF;
+	clear: both;
+	padding: .2em;
+	margin: 1em 0 1em 0;
+	background: #80CBC4;
+}
