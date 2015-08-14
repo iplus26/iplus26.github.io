@@ -2,7 +2,7 @@ body, html {
 	margin: 0;
 	padding: 0;
 	background: #263238;
-	font-family: 'Lato', 'Source Han Sans CN', 'Helvetica Neue', helvetica, Arial, sans-serif; 
+	font-family: 'Lato', 'Source Han Sans CN', 'Helvetica Neue', helvetica, "Microsoft Yahei", sans-serif; 
 }
 
 a, a:hover, a:link, a:visited {
@@ -70,7 +70,12 @@ i {
 .post p {
 	color: #84FFFF;
 	font-weight: 100;
-	font-size: 1.2em;
+	font-size: 1em;
+}
+
+.post.chinese p {
+	text-align: justify;
+	text-justify: distribute; 
 }
 
 .post .links a {
@@ -85,6 +90,29 @@ i {
 
 .post a:visited, .post a:link {
 	color: inherit;
+}
+
+.post .image-wrapper {
+	width: 100%;
+	position: relative;
+	white-space: nowrap;
+	overflow-x: scroll;
+}
+
+.post .image-wrapper .images {
+	width: 500%;
+}
+
+.post .image-wrapper img {
+	width: 30em;
+	float: left;
+	display: inline-block;
+	margin: 0 1em 1em 0;
+}
+
+.post iframe {
+	width: 600px;
+	height: 470px;
 }
 
 #copyright {
