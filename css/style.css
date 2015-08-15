@@ -25,7 +25,6 @@ i {
 	height: 80%;
 	min-height: 400px;
 	left: 100px;
-	/*background: #C8D8DC;*/
 }
 
 #menu h1 a img {
@@ -88,17 +87,21 @@ i {
 }
 
 .post .links a {
-/*	float: left;
-	clear: both;*/
+	color: #2ecc71;
 	margin: 0 .2em 0 .2em;
 }
 
 .post a:hover {
+	color: #2ecc71;
 	text-decoration: underline;
 }
 
-.post a:visited, .post a:link {
-	color: inherit;
+.post a:link {
+	color: #2ecc71;
+}
+
+.post a:visited {
+	color: #d35400;
 }
 
 .post .image-wrapper {
@@ -128,9 +131,92 @@ i {
 	height: 470px;
 }
 
+ul#portfolioOverview li {
+	float: right;
+	transition: all .5s ease-in-out;
+	margin: 0 5px 5px 0;
+	width: 195px;
+	height: 192px;
+	background-size: cover;
+	line-height: 100%;
+}
+
+ul#portfolioOverview li.featured {
+	width: 395px;
+}
+
+ul#portfolioOverview li:hover {
+	z-index: 9999;
+	box-shadow: 0 0 .5em;
+}
+
+ul#portfolioOverview a,
+ul#portfolioOverview a:link,
+ul#portfolioOverview a:visited,
+ul#portfolioOverview a:hover {
+	text-decoration: none;
+}
+
+ul#portfolioOverview li#watchedapp {
+	color: rgba(80, 148, 243, .3);
+	background-image: url("http://7xjjp0.com1.z0.glb.clouddn.com/portfolio_watched_logo.png");
+}
+
+ul#portfolioOverview li#github-pages {
+	background-image: url("http://7xjjp0.com1.z0.glb.clouddn.com/me.png");
+}
+
+ul#portfolioOverview li#doumail-back{
+	background-image: url("https://github.com/iplus26/doumail-back/raw/master/readme_images/Screenshot.png");
+	background-color: #2EA45F;
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+ul#portfolioOverview li#numerous-sdk {
+	background-image: url("http://numerousapp.com/img/numerous-light.png");
+	background-size: 90%;
+	background-position: center;
+	background-color: #34495e;
+	background-repeat: no-repeat; 
+}
+
+ul#portfolioOverview li#maywide {
+	background-image: url("http://www.tech-ex.com/premium/broadcast/maywide/img/lg_maywide.gif");
+	background-position: center;
+	background-size: 90%;
+	background-color: white;
+	background-repeat: no-repeat;
+}
+
+ul#portfolioOverview li#doumail-back:hover:before {
+	content: "";
+	line-height: 100%;
+}
+
+ul#portfolioOverview li .content {
+	height: 192px;
+	background: black;
+	opacity: 0;
+}
+ul#portfolioOverview li:hover .content {
+	opacity: .7;
+	transition: all .2s ease-in-out;
+}
+ul#portfolioOverview li:hover .content h2,
+ul#portfolioOverview li:hover .content p {
+	margin: 0;
+	padding: 10px;
+	color: white;
+	opacity: 1;
+}
+
 #copyright {
+	position: fixed;
+	bottom: 0;
+	right: 0;
 	color: #84FFFF;
-	clear: both;
 	padding: .2em;
 	margin: 1em 0 1em 0;
 	background: #80CBC4;
