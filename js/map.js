@@ -1,3 +1,5 @@
+'use strict';
+
 // 路径配置
 require.config({
     paths: {
@@ -29,7 +31,6 @@ require(
                     name: '中国',
                     type: 'map',
                     mapType: 'china',
-                    // selectedMode: 'multiple',
                     itemStyle: {
                         normal: {
                             label: {
@@ -45,44 +46,37 @@ require(
                     data: [
                         {
                             name: '四川',
-                            // selected: true,
                             value: 5
                         },
                         {
                             name: '陕西',
-                            // selected: true,
                             value: 5
                         },
                         {
                             name: '江苏',
-                            // selected: true
                             value: 5
                         },
                         {
                             name: '云南',
-                            // selected: true
                             value: 5
                         },
                         {
                             name: '福建',
-                            // selected: true
                             value: 5
                         },
                         {
                             name: '北京',
-                            // selected: true
                             value: 5
                         }, {
                             name: '河北',
-                            // selected: true
                             value: 3
                         }, {
                             name: '广东',
-                            value: 1
+                            value: 5
                         },
                         {
                             name: '香港',
-                            value: 1
+                            value: 5
                         },
                         {
                             name: '湖南',
