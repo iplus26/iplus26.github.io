@@ -2,7 +2,7 @@ body, html {
 	margin: 0;
 	padding: 0;
 	background: #263238;
-	font-family: 'Lato', 'Source Han Sans CN', 'Helvetica Neue', helvetica, "Microsoft Yahei", sans-serif; 
+	font-family: 'Source Han Sans CN', 'Helvetica Neue', helvetica, "Microsoft Yahei", sans-serif; 
 }
 
 a, a:hover, a:link, a:visited {
@@ -227,6 +227,12 @@ ul#portfolioOverview li:hover .content p {
 	padding: 10px;
 	color: white;
 	opacity: 1;
+}
+
+#wechat-qrcode {
+	width: 128px;
+	height: 128px;
+	border: 1px #84FFFF solid;
 }
 
 #copyright {
