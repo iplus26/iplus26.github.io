@@ -1,0 +1,40 @@
+body, html {
+  /* defined in ivan.css */
+}
+
+#right-div {
+	height: 100%;
+	width: auto;
+	color: #222531;
+
+	overflow-y: scroll;
+}
+
+	.content {
+		margin: 3em;
+	}
+	
+	.content div {
+		margin: 2em;
+		height: 8em;
+		width: 8em;
+		float: left;
+	}
+	.content img {
+		height: 8em;
+		border-radius: 20%;
+		transition: all .5s ease-in-out;
+	}
+	
+	.content img:hover {
+		padding: .3em;
+		height: 7.4em;
+	}
+	
+	a:hover {
+		background-color: transparent;
+	}
+	
+	.content .wechat:hover {
+		content: url(http://7xjjp0.com1.z0.glb.clouddn.com/contact_wechat-qrcode.png);
+	}
