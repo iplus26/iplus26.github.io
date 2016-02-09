@@ -1,0 +1,273 @@
+/*
+ * Style file for http://ivanjiang.com/
+ *
+ * @Author: Ivan Jiang (iplus26)
+ * Contact me via me@ivanjiang.com
+ *
+ * Wish you a nice day! 
+ * 
+ */
+
+/*
+ * Variables
+ */
+
+$main_color: rgb(66, 165, 245);
+
+/*
+ * Global
+ */
+
+ html, body {
+ 	padding: 0;
+ 	margin : 0;
+ 	font-family: "Helvetica", sans-serif;
+ }
+
+ body {
+ 	vertical-align: middle;
+ 	max-width: 60%;
+ 	margin: 8em auto;
+ }
+
+ a {
+ 	&, &:link, &:visited, &:hover {
+		color: $main_color;
+ 		text-decoration: none;
+ 	}
+ }
+
+/*
+ * Header
+ */
+
+ #header {
+
+ 	display: block;
+ 	position: static;
+ 	margin: auto;
+ 	text-align: center;
+
+ 	#avatar-wrapper {
+ 		display: inline-block;
+ 		padding: 0;
+ 		margin: 0;
+ 		position: relative; 
+ 		vertical-align: middle;
+		border-radius: 50%;
+		background-image: url('http://7xjjp0.com1.z0.glb.clouddn.com/me.png');
+		background-size: contain;
+		width: 2rem;
+		height: 2rem;
+		transition: box-shadow .5s ease-in-out;
+
+	}
+
+	#name-wrapper {
+		display: inline-block;
+		vertical-align: middle;
+		height: 3rem;
+		line-height: 3rem;
+		font-size: 2rem;
+		font-weight: 100;
+		padding-left: .5rem;
+
+		p {
+			padding: 0;
+			margin: 0;
+		}
+	}
+}
+
+/*
+ * Content
+ */
+
+ #content {
+
+ 	position: static;
+ 	text-align: center;
+
+ 	ul.blocks {
+ 		margin: 0;
+ 		padding: 0;
+ 		list-style: none;
+ 	}
+
+ 	.links {
+
+ 		display: inline-block;
+ 		font-size: 1.2em;
+ 		vertical-align: middle;
+
+ 		#changable {
+ 			font-size: 1.3em;
+ 			color: lighten($main_color, 20%);
+ 			display: block;
+ 			margin: 0;
+ 			height: 2.8em;
+ 		}
+
+ 		.block {
+
+ 			display: block;
+
+ 			p.title {
+
+ 				display: inline-block;
+
+ 				&:after {
+ 					content: ': ';
+ 				}
+ 			}
+
+ 			ul {
+ 				display: inline-block;
+ 				padding: 0;
+ 				list-style: none;
+ 				margin-bottom: .8em;
+
+ 				li {
+ 					display: inline-block;
+ 				}
+ 			}
+ 		}
+
+ 		.smile {
+ 			&:after {
+ 				display: inline-block;
+ 				content: ':)';
+ 				padding-left: .2em;
+ 				padding-right: .2em;
+ 				color: transparent;
+ 				width: 1.2rem;
+ 				height: 1.2rem;
+ 				background: url('../images/Happy-48.png');
+ 				background-repeat: no-repeat;
+ 				background-size: contain;
+ 				background-position: center;
+ 			}
+ 		}
+
+ 		.mac {
+ 			&:after {
+ 				display: inline-block;
+ 				content: 'mac';
+ 				color: transparent;
+ 				width: 1.2rem;
+ 				height: 1.2rem;
+ 				background: url('../images/Mac Client-48.png');
+ 				background-repeat: no-repeat;
+ 				background-size: contain;
+ 				background-position: center;
+ 			}
+ 		}
+
+ 		.pdf {
+ 			&:after {
+ 				display: inline-block;
+ 				content: 'pdf';
+ 				color: transparent;
+ 				width: 1.2rem;
+ 				height: 1.2rem;
+ 				background: url('../images/PDF-48.png');
+ 				background-repeat: no-repeat;
+ 				background-size: contain;
+ 				background-position: center;
+ 			}
+ 		}
+
+ 		.win {
+ 			&:after {
+ 				display: inline-block;
+ 				content: 'win';
+ 				color: transparent;
+ 				width: 1.2rem;
+ 				height: 1.2rem;
+ 				background: url('../images/Windows Logo-48.png');
+ 				background-repeat: no-repeat;
+ 				background-size: contain;
+ 				background-position: center;
+ 			}
+ 		}
+
+ 		.ios {
+ 			&:after {
+ 				display: inline-block;
+ 				content: 'ios';
+ 				color: transparent;
+ 				width: 1.2rem;
+ 				height: 1.2rem;
+ 				background: url('../images/Mac OS-48.png');
+ 				background-repeat: no-repeat;
+ 				background-size: contain;
+ 				background-position: center;
+ 			}
+ 		}
+
+ 		.wechat {
+ 			&:after {
+ 				display: inline-block;
+ 				content: 'wechat';
+ 				color: transparent;
+ 				width: 1.2rem;
+ 				height: 1.2rem;
+ 				background: url('../images/Weixing-48.png');
+ 				background-repeat: no-repeat;
+ 				background-size: contain;
+ 				background-position: center;
+ 			}
+ 		}
+
+ 		.browser {
+ 			&:after {
+ 				display: inline-block;
+ 				content: 'browser';
+ 				color: transparent;
+ 				width: 1.2rem;
+ 				height: 1.2rem;
+ 				background: url('../images/Safari-48.png');
+ 				background-repeat: no-repeat;
+ 				background-size: contain;
+ 				background-position: center;
+ 			}
+ 		}
+
+ 		.github {
+ 			&:after {
+ 				display: inline-block;
+ 				content: 'github';
+ 				color: transparent;
+ 				width: 1.2rem;
+ 				height: 1.2rem;
+ 				background: url('../images/GitHub-48.png');
+ 				background-repeat: no-repeat;
+ 				background-size: contain;
+ 				background-position: center;
+ 			}
+ 		}
+
+ 		.so {
+ 			&:after {
+ 				display: inline-block;
+ 				content: 'github';
+ 				color: transparent;
+ 				width: 1.2rem;
+ 				height: 1.2rem;
+ 				background: url('../images/Stack Overflow-48.png');
+ 				background-repeat: no-repeat;
+ 				background-size: contain;
+ 				background-position: center;
+ 			}
+ 		}
+
+ 	}
+
+ }
+
+/*
+ * Footer
+ */
+
+ footer {
+ }
