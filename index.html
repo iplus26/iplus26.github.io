@@ -1,97 +1,175 @@
+<!DOCTYPE html>
 <html>
-	<head>
-		<meta charset="utf-8"/>
-    	<meta name="viewport" content="width=device-width, initial-scale=1">
-    	<meta name="Keywords" content="前端,前端开发者,Web Developer,姜希凡,iplus,iplus26,Ivan,看过,姜倔倔"/>
-    	<meta name="wot-verification" content="7f438211486d709936f1"/>
-    	<link rel="icon" href="http://http://7xjjp0.com1.z0.glb.clouddn.com/me.png" />
-   		<meta name="description" content="姜希凡的个人主页"/>
-		<link rel="stylesheet" href="style/PaceSafari.css" type="text/css" />
-		<link rel="stylesheet" href="style/ivan.css"  type="text/css"/>
-		<link rel="stylesheet" href="style/index.css" type="text/css"/>
-    	<link href='http://fonts.lug.ustc.edu.cn/css?family=Lato:300,400,900' rel='stylesheet' type='text/css'>
-    	<title>Ivan Jiang · 姜希凡</title>
-	</head>
-	
-	<body>
-		<div id="pacesafari"></div>
-		<div id="left-div">
-			<div class="pic-of-me">
-				<img src="http://7xjjp0.com1.z0.glb.clouddn.com/me.png" />
-			</div>
-			<div class="name">
-				Ivan Jiang
-			</div>
-			<div class="link about">
-				<a href="index.html">About</a>
-			</div>
-			<div class="link about">
-				<a href="blog">Blog</a>
-			</div>
-			<div class="link contact">
-				<a href="contact.html">Contact</a>
-			</div>
+<head>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="icon" href="http://http://7xjjp0.com1.z0.glb.clouddn.com/me.png" />
+   	<meta name="description" content="姜希凡的个人主页"/>
+    <meta name="Keywords" content="前端,前端开发者,Web Developer,姜希凡,iplus,iplus26,Ivan,看过,姜倔倔"/>
+	<title>Ivan Jiang (姜希凡)</title>
+	<link rel="stylesheet" type="text/css" href="styles/main.css" />
+</head>
+<body>
+
+<div id="overall-wrapper">
+
+	<div id="header">
+		<div id="avatar-wrapper">
+			<!-- my avatar here. -->
 		</div>
+
+		<div id="name-wrapper">
+			<p class="name-label">Ivan Jiang</p>
+		</div>
+	</div>
+
+	<div id="content">
+		<div class="links">
+
+			<p id="changable"></p>
+
+			<ul class="blocks">
+				<li>
+					<div class="block">
+						<p class="title">Things I build</p>
+						<ul>
+							<li class="ios"><del><a href="https://github.com/iplus26/react-native-watched">豆苗 App</a></del></li> / 
+							<li class="win"><a href="https://github.com/iplus26/Watched">Watched App</a></li> /
+							<li class="wechat">微友助手</li> /
+							<li class="browser"><del><a href="https://github.com/iplus26/doumail-back">doumail-back</a></del></li> /
+							<li><a href="/blog">blog</a></li>
+						</ul>
+					</div>
+				</li>
+				<li>
+					<div class="block">
+						<p class="title">Where to find me</p>
+						<ul>
+							<li><a href="https://github.com/iplus26">GitHub</a></li> /
+							<li><a href="http://stackoverflow.com/users/4158282/iplus26">StackOverflow</a></li> /
+							<li><a href="http://www.douban.com/people/iplus26/">Douban</a></li> /
+							<li>in front of my <span class="mac">Mac</span></li>
+						</ul>
+					</div>
+				</li>
+				<li>
+					<div class="block">
+						<p class="title"><span class="smile">Say</span>to me</p>
+						<ul>
+							<li><a href="mailto:me@ivanjiang.com">Email</a></li> /
+							<li class="wechat">WeChat: ivanfd</li>
+						</ul>
+					</div>
+				</li>
+				<li>
+					<div class="block">
+					<p class="title">Open for job</p>
+					<ul>
+						<li class="pdf"><a>Résumé (zh_cn)</a></li>
+					</ul>
+					</div>
+				</li>
+			</ul>
+			
+		</div>
+	</div>
+
+	</div>
+
+	<footer>
 		
-		<div id="right-div">
-			<div class="content">
-				<h1>About Me</h1></h1>
-				<p>Front end developer, an undergraduate of UESTC (short for University of Electronic Science and Technology of China, I still can't spell its English full name), living in Chengdu right now. </p>
-				<p>I am developer of <a target="_blank" href="http://apps.microsoft.com/windows/zh-cn/app/7eddcdbc-35a4-47ef-8ea7-fe7c37152d41">Watched</a>, a Windows 8.1 app for Douban Movie (Chinese version IMDb), 
-					and the author of doumail-back, a Safari extension (which gains me most stars on GitHub, and honestly I don't want them... on such a repository).
-				</p>
-					
-				<p>I spend major of my time on <a href="#front-end-dev">front end development</a> now,
-					but I am also able and willing to do some <a href="#back-end-dev">back end development</a> and other works.
-				</p>
-				
-				<h2 id="front-end-dev">Front End Dev</h2>
-				<div class="logos">
-					<img src="http://7xjjp0.com1.z0.glb.clouddn.com/html5-logo.png" />
-					<img src="http://7xjjp0.com1.z0.glb.clouddn.com/css3-logo.png" />
-					<img src="http://7xjjp0.com1.z0.glb.clouddn.com/js-logo.png" />
-					<img src="http://7xjjp0.com1.z0.glb.clouddn.com/jquery-logo.png" />
-				</div>
-				<p>I write JavaScript since this February. JavaScript is a powerful tool that easily make my ideas come true. 
-				   I started from a simple Safari extension, <a target="_blank" href="http://github.com/iplus26/dbmovie">dbmovie</a>, 
-				   which shows IMDb ratings and more in Douban Movie page. There were several implements for Chrome or Firefox, but no Safari version.
-				</p>
-				<p>
-					Then I made <a target="_blank" href="http://apps.microsoft.com/windows/zh-cn/app/7eddcdbc-35a4-47ef-8ea7-fe7c37152d41">Watched</a>, a Windows 8.1 app for Douban Movie.
-					I like the Modern UI design, and Douban Movie. Kill two birds with one stone!
-					<a target="_blank" href="http://apps.microsoft.com/windows/zh-cn/app/7eddcdbc-35a4-47ef-8ea7-fe7c37152d41">Watched</a>
-					once ranked #2 in Windows Store New Rising Apps, and I was so excited, and then I never update it...
-				</p>
-				<p>
-					CSS is also amazing. I used to dream to be an artist one day. 
-					With CSS, I can do a huge number of things that I couldn't do with nearly no PS skills. 
-					I am very interested in different implements using CSS right now. 
-				</p>
+	</footer>
+
+	<script type="text/javascript">
+		'use strict';
+
+		function changeText() {
+			var changable = document.querySelector('#changable');
+
+			var hello = 'Hello, I\'m a Web FE developer. ';
+			var desc  = 'I write HTML, CSS and JavaScript. ';
 			
-				<h2 id="back-end-dev">Back End Dev</h2>
-				<div class="logos">
-					<img src="http://7xjjp0.com1.z0.glb.clouddn.com/php-logo.png" />
-					<img src="http://7xjjp0.com1.z0.glb.clouddn.com/mysql-logo.png" />
-				</div>
-				<p>
-					I wrote PHP for a while. <a href="http://watched.sinaapp.com/" target="_blank">Watched</a>,
-				    which makes me familiar with the API <del>and the hacks</del> of Douban Movie, is my very first project and the last.
-				    Steve Jobs said that, 
-				</p>
-				    <blockquote>
-						You can't connect the dots looking forward; you can only connect them looking backwards. So you have to trust that the dots will somehow connect in your future.
-					</blockquote>
-			    <p>
-					The point is that this project helps a lot when I was making the Windows 8.1 app.
-				</p>
-			
-				<h2 id="else-skills">Else</h2>
-				<p>Besides development, I am also interested in design and products. 
-				   I love movies, so you may have noticed that many of my stuffs is about movies. 
-				   I am a huge fan of Apple, and planning to head for iOS/OS X development later this year.   
-				</p>
-			</div>
-		</div>
-		<script type="text/javascript" src="js/PaceSafari.js"></script>
-	</body>
+			var step1Interval, step2Interval, step3Interval, step4Interval;
+
+			var i = 0;
+
+			var step1 = function step1() {
+				// hello, i'm a web fe dev
+				if (i < hello.length) {
+					changable.textContent += hello[i++];
+				} else {
+					i = 0;
+					clearInterval(step1Interval);
+				}
+			};
+
+			var step2 = function step2() {
+				// clear step1
+				if (i < hello.length) {
+					++i;
+					changable.textContent = changable.textContent.slice(0, -1); // remove the last word of the string
+				} else {
+					i = 0;
+					clearInterval(step2Interval);
+				}
+			};
+
+			var step3 = function step3() {
+				// i write html, css, javascript
+				if (i < desc.length) {
+					changable.textContent += desc[i++];
+				} else {
+					i = 0;
+					clearInterval(step3Interval);
+				}
+			};
+
+			var step4 = function step4() {
+				// clear step3
+				if (i < desc.length) {
+					++i;
+					changable.textContent = changable.textContent.slice(0, -1); // remove the last word of the string
+				} else {
+					i = 0;
+					clearInterval(step4Interval);
+				}
+			};
+
+			var animation = function animation() {
+
+				console.log('animation starts! ');
+
+				// print `hello` str
+				// takes 3000 ms
+				step1Interval = setInterval(step1, 3000 / hello.length);
+
+				// pause 1000 ms 
+				setTimeout(function initStep2Interval() {
+					// clear `hello` str
+					// takes 2400 ms 
+					step2Interval = setInterval(step2, 2000 / hello.length);
+				}, 4000);
+
+				// pause 1000 ms 
+				setTimeout(function initStep3Interval() {
+					// print `i write` str
+					// takes 3000 ms 
+					step3Interval = setInterval(step3, 3000 / desc.length);
+				}, 7000);
+
+				// pause 1000 ms 
+				setTimeout(function initStep4Interval() {
+					// clear `i write` str
+					// takes 2000 ms 
+					step4Interval = setInterval(step4, 2000 / desc.length);
+				}, 11000);
+			};
+
+			animation();
+			setInterval(animation, 14800);
+		}
+
+		changeText();
+	</script>
+</body>
 </html>
