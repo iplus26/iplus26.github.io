@@ -27,17 +27,15 @@
 	<div id="content">
 		<div class="links">
 
-			<p id="changable"></p>
-
 			<ul class="blocks">
 				<li>
 					<div class="block">
 						<p class="title">Things I build</p>
 						<ul>
-							<li class="ios"><del><a href="https://github.com/iplus26/react-native-watched">豆苗 App</a></del></li> / 
+							<li class="ios"><a href="https://github.com/iplus26/react-native-watched">豆苗 App</a></li> / 
 							<li class="win"><a href="https://github.com/iplus26/Watched">Watched App</a></li> /
-							<li class="wechat">微友助手</li> /
-							<li class="browser"><del><a href="https://github.com/iplus26/doumail-back">doumail-back</a></del></li> /
+							<li class="wechat"><a href="http://weiyoubot.com">微友助手</a></li> /
+							<li class="browser"><a href="https://github.com/iplus26/doumail-back">doumail-back</a></li> /
 							<li><a href="/blog">blog</a></li>
 						</ul>
 					</div>
@@ -62,14 +60,6 @@
 						</ul>
 					</div>
 				</li>
-				<li>
-					<div class="block">
-					<p class="title">Open for job</p>
-					<ul>
-						<li class="pdf"><a href="https://github.com/iplus26/iplus26.github.io/raw/master/files/姜希凡个人简历.pdf" target="_blank">Résumé (zh_cn)</a></li>
-					</ul>
-					</div>
-				</li>
 			</ul>
 			
 		</div>
@@ -80,97 +70,5 @@
 	<footer>
 		
 	</footer>
-
-	<script type="text/javascript">
-		'use strict';
-
-		function changeText() {
-			var changable = document.querySelector('#changable');
-
-			var hello = 'Hello, I\'m a Web FE developer. ';
-			var desc  = 'I write HTML, CSS and JavaScript. ';
-			
-			var step1Interval, step2Interval, step3Interval, step4Interval;
-
-			var i = 0;
-
-			var step1 = function step1() {
-				// hello, i'm a web fe dev
-				if (i < hello.length) {
-					changable.textContent += hello[i++];
-				} else {
-					i = 0;
-					clearInterval(step1Interval);
-				}
-			};
-
-			var step2 = function step2() {
-				// clear step1
-				if (i < hello.length) {
-					++i;
-					changable.textContent = changable.textContent.slice(0, -1); // remove the last word of the string
-				} else {
-					i = 0;
-					clearInterval(step2Interval);
-				}
-			};
-
-			var step3 = function step3() {
-				// i write html, css, javascript
-				if (i < desc.length) {
-					changable.textContent += desc[i++];
-				} else {
-					i = 0;
-					clearInterval(step3Interval);
-				}
-			};
-
-			var step4 = function step4() {
-				// clear step3
-				if (i < desc.length) {
-					++i;
-					changable.textContent = changable.textContent.slice(0, -1); // remove the last word of the string
-				} else {
-					i = 0;
-					clearInterval(step4Interval);
-					changable.textContent = 'Web FE Developer';
-				}
-			};
-
-			var animation = function animation() {
-
-				console.log('animation starts! ');
-
-				// print `hello` str
-				// takes 3000 ms
-				step1Interval = setInterval(step1, 3000 / hello.length);
-
-				// pause 1000 ms 
-				setTimeout(function initStep2Interval() {
-					// clear `hello` str
-					// takes 2400 ms 
-					step2Interval = setInterval(step2, 2000 / hello.length);
-				}, 4000);
-
-				// pause 1000 ms 
-				setTimeout(function initStep3Interval() {
-					// print `i write` str
-					// takes 3000 ms 
-					step3Interval = setInterval(step3, 3000 / desc.length);
-				}, 7000);
-
-				// pause 1000 ms 
-				setTimeout(function initStep4Interval() {
-					// clear `i write` str
-					// takes 2000 ms 
-					step4Interval = setInterval(step4, 2000 / desc.length);
-				}, 11000);
-			};
-
-			animation();
-		}
-
-		changeText();
-	</script>
 </body>
 </html>
